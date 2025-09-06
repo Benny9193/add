@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lewis Family History - Tallahassee, Florida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h3>Lewis Family</h3>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#family-tree" class="nav-link">Family Tree</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#migration-map" class="nav-link">Migration Map</a></li>
+                <li><a href="#photo-galleries" class="nav-link">Photo Galleries</a></li>
+                <li><a href="#notable-members" class="nav-link">Notable Members</a></li>
+                <li><a href="#properties" class="nav-link">Properties & Legacy</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="family-crest">
+                        <div class="crest-design">
+                            <div class="shield">L</div>
+                        </div>
+                    </div>
+                    <h1>The Lewis Family Legacy</h1>
+                    <p class="hero-subtitle">Seven generations of leadership and service in Tallahassee, Florida</p>
+                    <p class="hero-description">From Benjamin Cheever Lewis's arrival in 1836 to the present day, the Lewis family has been instrumental in shaping Tallahassee's banking, legal, and cultural landscape.</p>
+                    
+                    <div class="feature-highlights">
+                        <div class="highlight-card">
+                            <h4>Lewis State Bank</h4>
+                            <p>Founded 1856 - Florida's oldest bank</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h4>Frank Lloyd Wright House</h4>
+                            <p>Completed 1954 - Only private Wright residence in Florida</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h4>VMI Tradition</h4>
+                            <p>Multiple generations of Virginia Military Institute graduates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Tree Section -->
+        <section id="family-tree" class="section">
+            <div class="container">
+                <h2>Family Tree</h2>
+                <div class="advanced-search-container">
+                    <div class="search-container">
+                        <input type="text" id="family-search" class="form-control" placeholder="Search family members by name, occupation, or location...">
+                    </div>
+                    <div class="search-filters">
+                        <div class="filter-group">
+                            <label class="filter-label" for="generation-filter">Generation:</label>
+                            <select id="generation-filter" class="filter-select">
+                                <option value="all">All Generations</option>
+                                <option value="1">Generation 1 (1800s)</option>
+                                <option value="2">Generation 2 (1830s-1910s)</option>
+                                <option value="3">Generation 3 (1860s-1970s)</option>
+                                <option value="4">Generation 4 (1920s-2020s)</option>
+                                <option value="5">Generation 5 (1940s-present)</option>
+                                <option value="6">Generation 6 (1970s-present)</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label class="filter-label" for="occupation-filter">Occupation:</label>
+                            <select id="occupation-filter" class="filter-select">
+                                <option value="all">All Occupations</option>
+                                <option value="banking">Banking & Finance</option>
+                                <option value="legal">Legal & Judicial</option>
+                                <option value="military">Military Service</option>
+                                <option value="education">Education</option>
+                                <option value="arts">Arts & Culture</option>
+                                <option value="environmental">Environmental</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="technology">Technology</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label class="filter-label" for="location-filter">Location:</label>
+                            <select id="location-filter" class="filter-select">
+                                <option value="all">All Locations</option>
+                                <option value="virginia">Virginia</option>
+                                <option value="north-carolina">North Carolina</option>
+                                <option value="south-carolina">South Carolina</option>
+                                <option value="georgia">Georgia</option>
+                                <option value="florida">Florida</option>
+                                <option value="tallahassee">Tallahassee</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label class="filter-label" for="military-filter">Military Service:</label>
+                            <select id="military-filter" class="filter-select">
+                                <option value="all">All Members</option>
+                                <option value="military">Military Service</option>
+                                <option value="wwi">World War I</option>
+                                <option value="wwii">World War II</option>
+                                <option value="confederate">Confederate Service</option>
+                                <option value="vmi">VMI Education</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label class="filter-label" for="date-range">Date Range:</label>
+                            <div style="display: flex; gap: 8px;">
+                                <input type="number" id="start-year" class="filter-input" placeholder="Start Year" min="1800" max="2025">
+                                <input type="number" id="end-year" class="filter-input" placeholder="End Year" min="1800" max="2025">
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <button id="clear-filters" class="btn btn--outline" style="align-self: flex-end;">Clear Filters</button>
+                        </div>
+                    </div>
+                    <div id="search-results-summary" class="search-results-summary" style="display: none;"></div>
+                </div>
+                <div class="family-tree-container">
+                    <div class="tree-visualization" id="family-tree"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="section">
+            <div class="container">
+                <h2>Family Timeline</h2>
+                <p class="section-description">Major milestones in the Lewis family history from 1804 to present</p>
+                
+                <!-- Timeline View Controls -->
+                <div class="timeline-controls">
+                    <div class="view-selector">
+                        <button class="btn btn--outline timeline-view-btn active" data-view="family">Family Events</button>
+                        <button class="btn btn--outline timeline-view-btn" data-view="historical">Historical Context</button>
+                        <button class="btn btn--outline timeline-view-btn" data-view="combined">Combined Timeline</button>
+                    </div>
+                </div>
+
+                <div class="timeline-container" id="timeline-container">
+                    <!-- Timeline events will be populated by JavaScript -->
+                </div>
+                
+                <!-- Historical Context Panels -->
+                <div class="historical-context-container" id="historical-context-container" style="display: none;">
+                    <!-- Historical context periods will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Migration Map Section -->
+        <section id="migration-map" class="section">
+            <div class="container">
+                <h2>Family Migration & Geographic Legacy</h2>
+                <p class="section-description">Tracing 240 years of Lewis family movement from Virginia to Florida (1785-2025)</p>
+                
+                <div class="map-controls">
+                    <div class="period-selector">
+                        <button class="btn btn--outline period-btn active" data-period="all">Complete Migration (1785-2025)</button>
+                        <button class="btn btn--outline period-btn" data-period="early">Early Migration (1785-1830)</button>
+                        <button class="btn btn--outline period-btn" data-period="settlement">Florida Settlement (1836)</button>
+                        <button class="btn btn--outline period-btn" data-period="modern">Tallahassee Era (1836-Present)</button>
+                    </div>
+                </div>
+
+                <div class="migration-visualization">
+                    <div class="migration-map-container" id="migration-map-container">
+                        <div class="map-legend">
+                            <h4>Migration Timeline</h4>
+                            <div class="legend-items" id="legend-items">
+                                <!-- Legend will be populated by JavaScript -->
+                            </div>
+                        </div>
+                        <div class="interactive-map" id="interactive-map">
+                            <!-- SVG map will be created by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="migration-details" id="migration-details">
+                        <div class="location-info">
+                            <h3>Select a location to learn more about the Lewis family presence</h3>
+                            <p>Click on any state or migration path to explore the family's history in that region.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Galleries Section -->
+        <section id="photo-galleries" class="section">
+            <div class="container">
+                <h2>Family Photo Galleries</h2>
+                <p class="section-description">Explore seven generations through photographs organized by time periods and family branches</p>
+                
+                <!-- Gallery Controls -->
+                <div class="gallery-controls">
+                    <div class="gallery-view-selector">
+                        <button class="btn btn--outline gallery-view-btn active" data-view="periods">By Time Period</button>
+                        <button class="btn btn--outline gallery-view-btn" data-view="branches">By Family Branch</button>
+                        <button class="btn btn--outline gallery-view-btn" data-view="properties">Properties & Places</button>
+                    </div>
+                    
+                    <div class="gallery-filters" id="gallery-filters">
+                        <!-- Dynamic filters will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Gallery Container -->
+                <div class="photo-gallery-container" id="photo-gallery-container">
+                    <!-- Gallery content will be populated by JavaScript -->
+                </div>
+
+                <!-- Photo Modal -->
+                <div id="photo-modal" class="photo-modal hidden">
+                    <div class="photo-modal-overlay"></div>
+                    <div class="photo-modal-content">
+                        <button class="photo-modal-close">&times;</button>
+                        <div class="photo-modal-navigation">
+                            <button class="photo-nav-btn prev" id="photo-prev">‹</button>
+                            <button class="photo-nav-btn next" id="photo-next">›</button>
+                        </div>
+                        <div class="photo-modal-body" id="photo-modal-body">
+                            <!-- Photo details will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notable Members Section -->
+        <section id="notable-members" class="section">
+            <div class="container">
+                <h2>Notable Family Members</h2>
+                <div class="member-categories">
+                    <div class="category-filters">
+                        <button class="btn btn--outline category-btn active" data-category="all">All Members</button>
+                        <button class="btn btn--outline category-btn" data-category="founders">Founders</button>
+                        <button class="btn btn--outline category-btn" data-category="business">Business Leaders</button>
+                        <button class="btn btn--outline category-btn" data-category="civic">Civic Leaders</button>
+                        <button class="btn btn--outline category-btn" data-category="advocates">Advocates</button>
+                    </div>
+                </div>
+                <div class="members-grid" id="members-grid">
+                    <!-- Member cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties & Legacy Section -->
+        <section id="properties" class="section">
+            <div class="container">
+                <h2>Properties & Legacy</h2>
+                <p class="section-description">The Lewis family's contributions to Tallahassee's architectural and cultural heritage</p>
+                <div class="properties-grid" id="properties-grid">
+                    <!-- Property cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About This Research</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <h3>Research Methodology</h3>
+                        <p>This family history has been compiled through extensive research of public records, family documents, newspaper archives, and oral histories. Sources include Leon County records, Florida State Archives, VMI alumni records, and family correspondence spanning seven generations.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Family Historians</h3>
+                        <p>This website is maintained by the Lewis family descendants and genealogy researchers. For corrections, additional information, or research inquiries, please contact the family historians.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Additional Resources</h3>
+                        <ul>
+                            <li>Leon County Historical Society</li>
+                            <li>Florida State Archives</li>
+                            <li>Virginia Military Institute Alumni Records</li>
+                            <li>Tallahassee Democrat Historical Archives</li>
+                            <li>National Register of Historic Places</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Member Detail Modal -->
+    <div id="member-modal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modal-body">
+                <!-- Member details will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 The Lewis Family. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app_enhanced.js"></script>
+</body>
+</html>
