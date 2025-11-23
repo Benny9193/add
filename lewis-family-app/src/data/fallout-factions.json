@@ -1,0 +1,137 @@
+[
+  {
+    "id": "brotherhood-of-steel",
+    "name": "Brotherhood of Steel",
+    "acronym": "BoS",
+    "founded": 2077,
+    "leader": "Elder Arthur Maxson",
+    "headquarters": "Lost Hills Bunker / The Citadel / The Prydwen",
+    "ideology": "Technology preservation and control",
+    "description": "A quasi-religious military order dedicated to preserving and controlling advanced technology. Founded by Army Captain Roger Maxson after the Great War.",
+    "goals": [
+      "Preserve pre-war technology",
+      "Prevent misuse of dangerous weapons",
+      "Maintain technological superiority",
+      "Destroy abominations like super mutants and synths"
+    ],
+    "status": "active",
+    "allies": ["Lyons' Brotherhood", "Some Vault Dwellers"],
+    "enemies": ["Enclave", "Institute", "Super Mutants"],
+    "notableMembers": ["Elder Maxson", "Paladin Danse", "Scribe Haylen"]
+  },
+  {
+    "id": "ncr",
+    "name": "New California Republic",
+    "acronym": "NCR",
+    "founded": 2189,
+    "leader": "President Aaron Kimball",
+    "headquarters": "Shady Sands",
+    "ideology": "Democracy and expansion",
+    "description": "The largest post-war nation, attempting to rebuild old-world democracy and civilization across the wasteland.",
+    "goals": [
+      "Expand territory and influence",
+      "Establish law and order",
+      "Restore pre-war democratic values",
+      "Control resources like Hoover Dam"
+    ],
+    "status": "active",
+    "allies": ["Various settlements", "Some Brotherhood chapters"],
+    "enemies": ["Caesar's Legion", "Some raider groups"],
+    "notableMembers": ["President Tandi", "General Oliver", "Ambassador Crocker"]
+  },
+  {
+    "id": "caesars-legion",
+    "name": "Caesar's Legion",
+    "founded": 2247,
+    "leader": "Caesar (Edward Sallow)",
+    "headquarters": "Flagstaff, Arizona",
+    "ideology": "Autocracy based on Roman Empire",
+    "description": "A brutal, totalitarian dictatorship modeled after the Roman Empire, known for slavery, extreme violence, and rejection of pre-war technology.",
+    "goals": [
+      "Conquer the wasteland",
+      "Enforce absolute order through fear",
+      "Absorb tribes into the Legion",
+      "Destroy the NCR"
+    ],
+    "status": "active",
+    "allies": ["Great Khans (tentatively)", "Omertas"],
+    "enemies": ["NCR", "Brotherhood of Steel", "Most civilized settlements"],
+    "notableMembers": ["Caesar", "Legate Lanius", "Vulpes Inculta"]
+  },
+  {
+    "id": "enclave",
+    "name": "The Enclave",
+    "founded": 2077,
+    "leader": "President John Henry Eden / Colonel Augustus Autumn",
+    "headquarters": "Control Station ENCLAVE / Raven Rock",
+    "ideology": "Pre-war government supremacy",
+    "description": "The remnants of the pre-war United States government, believing themselves to be the only legitimate authority and viewing all wastelanders as mutants.",
+    "goals": [
+      "Restore America under their rule",
+      "Eliminate all 'mutated' humans",
+      "Control all advanced technology",
+      "Purge the wasteland"
+    ],
+    "status": "defunct",
+    "allies": ["None currently"],
+    "enemies": ["Everyone else"],
+    "notableMembers": ["President Richardson", "Frank Horrigan", "Colonel Autumn"]
+  },
+  {
+    "id": "institute",
+    "name": "The Institute",
+    "founded": 2110,
+    "leader": "Father (Shaun)",
+    "headquarters": "Underground beneath CIT ruins",
+    "ideology": "Scientific advancement above all",
+    "description": "The most technologically advanced faction, descended from MIT scientists. Creates synthetic humans (synths) and conducts controversial experiments.",
+    "goals": [
+      "Advance scientific knowledge",
+      "Perfect synthetic human technology",
+      "Maintain isolation from surface",
+      "Replace surface dwellers with synth agents"
+    ],
+    "status": "active",
+    "allies": ["None (operates in secret)"],
+    "enemies": ["Brotherhood of Steel", "Railroad", "Some settlements"],
+    "notableMembers": ["Father", "Dr. Madison Li", "Various synth Coursers"]
+  },
+  {
+    "id": "railroad",
+    "name": "The Railroad",
+    "founded": 2230,
+    "leader": "Desdemona",
+    "headquarters": "The Old North Church",
+    "ideology": "Synth liberation",
+    "description": "A secretive organization dedicated to freeing synths from the Institute and helping them integrate into human society.",
+    "goals": [
+      "Free synths from the Institute",
+      "Provide escaped synths with new identities",
+      "Destroy the Institute",
+      "Prove synths are sentient beings"
+    ],
+    "status": "active",
+    "allies": ["Some settlements", "Freed synths"],
+    "enemies": ["Institute", "Brotherhood of Steel"],
+    "notableMembers": ["Desdemona", "Deacon", "Glory"]
+  },
+  {
+    "id": "minutemen",
+    "name": "The Minutemen",
+    "founded": 2180,
+    "leader": "General (Sole Survivor)",
+    "headquarters": "The Castle / Sanctuary Hills",
+    "ideology": "Mutual defense and cooperation",
+    "description": "A volunteer militia dedicated to protecting settlements across the Commonwealth at a minute's notice.",
+    "goals": [
+      "Protect settlements from threats",
+      "Build a network of mutual defense",
+      "Maintain independence from larger factions",
+      "Help those in need"
+    ],
+    "status": "active",
+    "allies": ["Commonwealth settlements"],
+    "enemies": ["Raiders", "Super mutants", "Gunners"],
+    "notableMembers": ["Preston Garvey", "Ronnie Shaw"]
+  }
+]
