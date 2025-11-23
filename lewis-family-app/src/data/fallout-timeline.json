@@ -1,0 +1,82 @@
+[
+  {
+    "id": "atom-bomb-1945",
+    "year": 1945,
+    "title": "First Atomic Weapons",
+    "description": "The United States successfully tests and deploys atomic weapons, marking the beginning of the nuclear age and divergence from our timeline.",
+    "category": "pre-war"
+  },
+  {
+    "id": "transistor-failed",
+    "year": 1947,
+    "title": "Transistor Never Invented",
+    "description": "Unlike our timeline, the transistor is never invented, leading to a continued reliance on vacuum tubes and a distinctive retro-futuristic aesthetic.",
+    "category": "pre-war"
+  },
+  {
+    "id": "fusion-power",
+    "year": 2050,
+    "title": "Fusion Power Achieved",
+    "description": "Scientists achieve practical fusion power, revolutionizing energy production but leading to conflicts over remaining oil reserves.",
+    "category": "pre-war",
+    "relatedFactions": ["Enclave"]
+  },
+  {
+    "id": "power-armor",
+    "year": 2065,
+    "title": "Power Armor Development",
+    "description": "The first T-45d Power Armor is deployed by the United States military, changing warfare forever.",
+    "category": "pre-war",
+    "relatedFactions": ["US Army", "Brotherhood of Steel"]
+  },
+  {
+    "id": "great-war",
+    "year": 2077,
+    "title": "The Great War",
+    "description": "On October 23, 2077, nuclear war erupts. In two hours, most of the world is reduced to cinders. The lucky ones died instantly.",
+    "category": "war",
+    "relatedLocations": ["All major cities"]
+  },
+  {
+    "id": "vault-dwellers-emerge",
+    "year": 2161,
+    "title": "Vault 13 Opens",
+    "description": "The Vault Dweller emerges from Vault 13 to find a water chip, ultimately defeating the Master and the Unity.",
+    "category": "post-war",
+    "relatedLocations": ["Vault 13", "Cathedral"]
+  },
+  {
+    "id": "ncr-founded",
+    "year": 2189,
+    "title": "NCR Founded",
+    "description": "The New California Republic is officially founded, becoming one of the largest post-war nations.",
+    "category": "post-war",
+    "relatedFactions": ["NCR"]
+  },
+  {
+    "id": "brotherhood-founded",
+    "year": 2077,
+    "title": "Brotherhood of Steel Founded",
+    "description": "Captain Roger Maxson leads a revolt at Mariposa Military Base, eventually founding the Brotherhood of Steel.",
+    "category": "post-war",
+    "relatedFactions": ["Brotherhood of Steel"],
+    "relatedLocations": ["Lost Hills"]
+  },
+  {
+    "id": "institute-founded",
+    "year": 2110,
+    "title": "The Institute Formed",
+    "description": "Survivors of CIT (Commonwealth Institute of Technology) retreat underground, eventually becoming the Institute.",
+    "category": "post-war",
+    "relatedFactions": ["The Institute"],
+    "relatedLocations": ["The Institute"]
+  },
+  {
+    "id": "enclave-revealed",
+    "year": 2242,
+    "title": "Enclave Emerges",
+    "description": "The Enclave, remnants of the pre-war government, reveal themselves on the West Coast.",
+    "category": "post-war",
+    "relatedFactions": ["Enclave"]
+  }
+]

@@ -914,7 +914,6 @@ main {
   height: 3px;
   background: linear-gradient(90deg, var(--color-heritage-gold), var(--color-heritage-gold-light));
   border-radius: 2px;
-}
   margin-bottom: var(--space-24);
 }
 
@@ -1403,8 +1402,6 @@ main {
 
 .member-card:hover .view-more {
   opacity: 1;
-}
-  border-bottom: none;
 }
 
 /* Properties Grid */

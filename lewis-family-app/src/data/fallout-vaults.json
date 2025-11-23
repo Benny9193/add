@@ -1,0 +1,101 @@
+[
+  {
+    "id": "vault-13",
+    "number": 13,
+    "name": "Vault 13",
+    "location": "Southern California",
+    "experiment": "Intended to stay sealed for 200 years to study long-term isolation",
+    "status": "open",
+    "population": 1000,
+    "overseer": "Jacoren",
+    "outcome": "Opened early due to water chip failure. Vault Dweller saved wasteland from the Master.",
+    "notableResidents": ["The Vault Dweller"],
+    "year": 2077
+  },
+  {
+    "id": "vault-111",
+    "number": 111,
+    "name": "Vault 111",
+    "location": "Commonwealth (Massachusetts)",
+    "experiment": "Cryogenic suspension of all residents",
+    "status": "open",
+    "population": 150,
+    "overseer": "Unknown",
+    "outcome": "All residents except one killed or remained frozen. Sole Survivor emerged 210 years after the war.",
+    "notableResidents": ["Sole Survivor", "Nate/Nora"],
+    "year": 2077
+  },
+  {
+    "id": "vault-101",
+    "number": 101,
+    "name": "Vault 101",
+    "location": "Capital Wasteland (Washington D.C.)",
+    "experiment": "Never intended to open, test of indefinite isolation",
+    "status": "sealed",
+    "population": 100,
+    "overseer": "Alphonse Almodovar",
+    "outcome": "Lone Wanderer escaped, leading to political upheaval within the vault.",
+    "notableResidents": ["Lone Wanderer", "James"],
+    "year": 2077
+  },
+  {
+    "id": "vault-76",
+    "number": 76,
+    "name": "Vault 76",
+    "location": "Appalachia (West Virginia)",
+    "experiment": "Control vault, intended to open after 20-25 years",
+    "status": "open",
+    "population": 500,
+    "overseer": "Evan",
+    "outcome": "Successfully opened in 2102, residents tasked with rebuilding America.",
+    "year": 2077
+  },
+  {
+    "id": "vault-81",
+    "number": 81,
+    "name": "Vault 81",
+    "location": "Commonwealth (Massachusetts)",
+    "experiment": "Test experimental diseases on residents without their knowledge",
+    "status": "open",
+    "population": 96,
+    "overseer": "Olivia Marcks",
+    "outcome": "Scientists refused to conduct experiments, vault thriving as isolated community.",
+    "year": 2077
+  },
+  {
+    "id": "vault-11",
+    "number": 11,
+    "name": "Vault 11",
+    "location": "Mojave Wasteland (Nevada)",
+    "experiment": "Residents must sacrifice one person annually or face extermination",
+    "status": "destroyed",
+    "population": 0,
+    "overseer": "Various",
+    "outcome": "After years of sacrifices, final residents refused and vault opened, revealing it was a test of morality.",
+    "year": 2077
+  },
+  {
+    "id": "vault-112",
+    "number": 112,
+    "name": "Vault 112",
+    "location": "Capital Wasteland",
+    "experiment": "Virtual reality simulation under control of Stanislaus Braun",
+    "status": "sealed",
+    "population": 85,
+    "overseer": "Stanislaus Braun",
+    "outcome": "Residents trapped in endless VR simulation, tortured by sadistic overseer for 200 years.",
+    "year": 2077
+  },
+  {
+    "id": "vault-22",
+    "number": 22,
+    "name": "Vault 22",
+    "location": "Mojave Wasteland",
+    "experiment": "Agricultural research with experimental plants",
+    "status": "destroyed",
+    "population": 0,
+    "overseer": "Unknown",
+    "outcome": "Plant experiments went wrong, creating deadly spore carriers that killed all residents.",
+    "year": 2077
+  }
+]
