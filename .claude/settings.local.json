@@ -8,7 +8,15 @@
       "Bash(git branch:*)",
       "Bash(git push:*)",
       "Bash(dir:*)",
-      "Bash(nul)"
+      "Bash(nul)",
+      "Bash(certutil -hashfile:*)",
+      "Bash(del app.js app_1.js)",
+      "Bash(rm:*)",
+      "Bash(node --version:*)",
+      "Bash(npm --version:*)",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)"
     ],
     "deny": [],
     "ask": []
