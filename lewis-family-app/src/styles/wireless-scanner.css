@@ -1,0 +1,261 @@
+/* Wireless Scanner Styles */
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes scan-wave {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Spinning animation for scan button */
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Pulse animation for scanning state */
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Network card animations */
+.network-card {
+  animation: slide-in 0.3s ease-out;
+}
+
+.network-card:hover {
+  transform: translateY(-2px);
+}
+
+.network-card--selected {
+  animation: none;
+}
+
+/* Signal strength bars animation */
+.signal-bar {
+  transition: all 0.3s ease;
+}
+
+.signal-bar--animated {
+  animation: fade-in 0.5s ease-out;
+}
+
+/* Scanner wave effect */
+.scanner-wave {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+  animation: scan-wave 2s ease-out infinite;
+}
+
+/* Filter chips */
+.filter-chip {
+  transition: all 0.15s ease;
+}
+
+.filter-chip:hover:not(.filter-chip--active) {
+  background-color: #f3f4f6;
+}
+
+.filter-chip--active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+/* Progress bar */
+.scan-progress-bar {
+  transition: width 0.3s ease;
+}
+
+/* Network list item */
+.network-list-item {
+  transition: background-color 0.15s ease;
+}
+
+.network-list-item:hover {
+  background-color: #f9fafb;
+}
+
+.network-list-item--selected {
+  background-color: #eff6ff;
+}
+
+/* Details panel */
+.details-panel {
+  animation: slide-in 0.3s ease-out;
+}
+
+/* Stat cards */
+.stat-card {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Circular signal indicator */
+.circular-signal {
+  transition: all 0.5s ease;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: relative;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 10px;
+  font-size: 12px;
+  background-color: #1f2937;
+  color: white;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Button hover effects */
+.scan-button {
+  transition: all 0.2s ease;
+}
+
+.scan-button:hover {
+  transform: translateY(-1px);
+}
+
+.scan-button:active {
+  transform: translateY(0);
+}
+
+/* Empty state */
+.empty-state {
+  animation: fade-in 0.5s ease-out;
+}
+
+/* Search input focus */
+.search-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wireless-scanner-page {
+    padding: 16px;
+  }
+
+  .network-details-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .network-card {
+    padding: 12px;
+  }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  .wireless-scanner-page {
+    --bg-primary: #1f2937;
+    --bg-secondary: #374151;
+    --text-primary: #f9fafb;
+    --text-secondary: #9ca3af;
+    --border-color: #4b5563;
+  }
+}
+
+/* Print styles */
+@media print {
+  .scan-button,
+  .filter-panel,
+  .toolbar {
+    display: none;
+  }
+
+  .network-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+}
