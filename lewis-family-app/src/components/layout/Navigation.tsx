@@ -14,6 +14,7 @@ export function Navigation() {
     { path: '/gallery', label: 'Photo Galleries' },
     { path: '/documents', label: 'Documents' },
     { path: '/research', label: 'Research' },
+    { path: '/wireless-scanner', label: 'WiFi Scanner' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

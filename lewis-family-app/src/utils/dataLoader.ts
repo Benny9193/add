@@ -1,4 +1,4 @@
-import { FamilyData } from '../types';
+import type { FamilyData } from '../types';
 import familyMembersData from '../data/family-members.json';
 import locationData from '../data/location-data.json';
 import historicalContext from '../data/historical-context.json';

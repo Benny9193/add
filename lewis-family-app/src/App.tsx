@@ -9,8 +9,10 @@ import { GalleryPage } from './pages/GalleryPage';
 import { MemberDetailPage } from './pages/MemberDetailPage';
 import { DocumentLibraryPage } from './pages/DocumentLibraryPage';
 import { ResearchPage } from './pages/ResearchPage';
+import { WirelessScannerPage } from './pages/WirelessScannerPage';
 import { useFamilyStore } from './stores/familyStore';
 import { loadFamilyData } from './utils/dataLoader';
+import './styles/wireless-scanner.css';
 
 function App() {
   const setFamilyData = useFamilyStore((state) => state.setFamilyData);
@@ -46,6 +48,7 @@ function App() {
           <Route path="/member/:id" element={<MemberDetailPage />} />
           <Route path="/documents" element={<DocumentLibraryPage />} />
           <Route path="/research" element={<ResearchPage />} />
+          <Route path="/wireless-scanner" element={<WirelessScannerPage />} />
         </Routes>
       </Layout>
     </Router>
